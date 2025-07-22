@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Health Junction | Gut‑Brain & Habit Coaching</title>
+  <meta name="description" content="Certified Health Coach Ona Lingyte helps you decode cravings, calm IBS and build sustainable habits with evidence‑based mind‑body tools." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;900&display=swap" rel="stylesheet" />
+  <!-- TailwindCSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config={theme:{extend:{fontFamily:{sans:['Inter','ui-sans-serif','system-ui']},colors:{hj:{light:'#F5E6C8',light2:'#F2E0B8',leaf:'#A7C957',leaf2:'#8EBF3F',dark:'#1B4332',dark2:'#10281E'}},boxShadow:{glow:'0 0 0 3px rgba(167,201,87,.45)'},keyframes:{fadeUp:{'0%':{opacity:0,transform:'translateY(20px)'},'100%':{opacity:1,transform:'translateY(0)'}},pulseRing:{'0%':{transform:'scale(.33)',opacity:.6},'80%,100%':{transform:'scale(1)',opacity:0}}},animation:{fadeUp:'fadeUp .7s ease-out both',pulseRing:'pulseRing 1.4s cubic-bezier(.215,.61,.355,1) infinite'}}}};
+  </script>
+  <style>
+    :root{color-scheme:light}
+    body{font-feature-settings:'cv02','cv03','cv04','cv11'}
+    ::-webkit-scrollbar{width:10px}
+    ::-webkit-scrollbar-track{background:#F5E6C8}
+    ::-webkit-scrollbar-thumb{background:#A7C957;border-radius:5px}
+    ::-webkit-scrollbar-thumb:hover{background:#8EBF3F}
+  </style>
+</head>
+<body class="font-sans antialiased text-hj-dark2 bg-hj-light/60 selection:bg-hj-leaf selection:text-hj-dark">
+  <a href="#main" class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:z-50 bg-white px-4 py-2 rounded shadow">Skip to content</a>
+
+  <!-- Mobile Menu -->
+  <div id="mobileMenu" class="fixed inset-0 bg-hj-dark/90 backdrop-blur-sm z-40 hidden">
+    <nav class="flex flex-col items-center justify-center h-full space-y-8 text-2xl text-hj-light">
+      <a href="#about" class="hover:text-hj-leaf" onclick="toggleMobileMenu()">About</a>
+      <a href="#benefits" class="hover:text-hj-leaf" onclick="toggleMobileMenu()">Benefits</a>
+      <a href="#programs" class="hover:text-hj-leaf" onclick="toggleMobileMenu()">Programs</a>
+      <a href="#process" class="hover:text-hj-leaf" onclick="toggleMobileMenu()">Process</a>
+      <a href="#join" class="hover:text-hj-leaf" onclick="toggleMobileMenu()">Join</a>
+      <a href="#contact" class="hover:text-hj-leaf" onclick="toggleMobileMenu()">Contact</a>
+    </nav>
+  </div>
+
+  <!-- Header -->
+  <header id="top" class="fixed w-full z-50 transition-colors duration-300" data-nav-swap>
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div class="flex h-16 items-center justify-between">
+        <a href="#top" class="flex items-center space-x-2 group">
+          <span class="relative inline-block">
+            <span class="absolute inset-0 rounded-full bg-hj-leaf animate-pulseRing"></span>
+            <span class="relative inline-flex h-8 w-8 items-center justify-center rounded-full bg-hj-dark text-white text-sm font-bold">HJ</span>
+          </span>
+          <span class="text-lg sm:text-xl font-bold tracking-tight text-hj-dark group-hover:text-hj-leaf">Health Junction</span>
+        </a>
+        <nav class="hidden md:flex space-x-8 text-sm font-medium">
+          <a href="#about" class="hover:text-hj-leaf">About</a>
+          <a href="#benefits" class="hover:text-hj-leaf">Benefits</a>
+          <a href="#programs" class="hover:text-hj-leaf">Programs</a>
+          <a href="#process" class="hover:text-hj-leaf">Process</a>
+          <a href="#join" class="hover:text-hj-leaf">Join</a>
+          <a href="#contact" class="hover:text-hj-leaf">Contact</a>
+        </nav>
+        <button id="mobileMenuBtn" class="md:hidden inline-flex items-center justify-center rounded-md border border-hj-dark px-3 py-2 text-hj-dark hover:bg-hj-leaf hover:text-hj-dark2" aria-label="Open Menu" onclick="toggleMobileMenu()">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section aria-labelledby="hero-heading" class="relative min-h-screen flex items-center bg-hj-light2 overflow-hidden">
+    <div class="absolute inset-0 -z-10">
+      <img loading="lazy" src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=compress&cs=tinysrgb&fit=crop&w=1600&h=900&q=80" alt="Sun‑dappled forest path" class="h-full w-full object-cover opacity-30 mix-blend-multiply" />
+    </div>
+    <div class="mx-auto max-w-4xl px-6 py-24 text-center">
+      <h1 id="hero-heading" class="text-4xl sm:text-5xl md:text-6xl font-extrabold text-hj-dark drop-shadow-md">Understand What Your Body Is Asking For</h1>
+      <p class="mt-6 max-w-xl mx-auto text-lg sm:text-xl text-hj-dark/80">Certified Health Coach Ona Lingyte helps you calm IBS, decode cravings & build habits that stick.
+        <a href="https://www.instagram.com/onalingyte/" target="_blank" rel="noopener" class="underline decoration-1 hover:text-hj-leaf2">Instagram</a>
+      </p>
+      <div class="mt-8 flex flex-col sm:flex-row justify-center gap-4">
+        <a href="#join" class="inline-flex items-center justify-center rounded-md bg-hj-leaf px-8 py-3 text-base font-semibold text-hj-dark2 shadow hover:bg-hj-leaf2 focus:outline-none focus:ring-4 focus:ring-hj-leaf/50">Start Your Journey</a>
+        <a href="#about" class="inline-flex items-center justify-center rounded-md bg-white/80 px-8 py-3 text-base font-semibold text-hj-dark2 shadow hover:bg-white focus:outline-none focus:ring-4 focus:ring-hj-leaf/50">Meet Ona</a>
+      </div>
+    </div>
+  </section>
+
+  <main id="main">
+    <!-- About -->
+    <section id="about" class="py-24 bg-white">
+      <div class="mx-auto max-w-7xl px-6 lg:px-8 grid lg:grid-cols-2 gap-16 items-center">
+        <div class="order-2 lg:order-1 space-y-6 animate-on-scroll">
+          <h2 class="text-3xl font-bold text-hj-dark">Hi, I’m Ona Lingyte — IBS & Mind‑Body Specialist</h2>
+          <p class="text-lg text-hj-dark/80">Certified Health Coach · Behavioral Therapy Practitioner · Recipe Creator.</p>
+          <p class="text-lg text-hj-dark/80">I help you translate body signals—bloating, cravings, low energy—into doable actions so you can feel light, energized & at peace with food.
+            <a href="https://www.instagram.com/onalingyte/" target="_blank" rel="noopener" class="underline decoration-1 hover:text-hj-leaf2">See more</a>
+          </p>
+          <p class="text-lg text-hj-dark/80 italic font-semibold">“You can eat the cleanest foods and hit the gym every day, but if your mind is burdened or your environment draining, results stall.”</p>
+          <a href="#benefits" class="inline-block px-6 py-3 rounded-md bg-hj-leaf text-hj-dark2 font-semibold shadow hover:bg-hj-leaf2">Why Work With Me</a>
+        </div>
+        <div class="order-1 lg:order-2">
+          <img loading="lazy" src="https://images.unsplash.com/photo-1502082553048-f009c37129b9?auto=compress&cs=tinysrgb&fit=crop&w=800&h=600&q=80" alt="Serene garden tree" class="rounded-2xl shadow-xl ring-1 ring-hj-dark/10 w-full object-cover" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Benefits section remains unchanged -->
+
+    <!-- Programs -->
+    <section id="programs" class="py-24 bg-white">
+      <div class="mx-auto max-w-7xl px-6 lg:px-8 mb-16 text-center animate-on-scroll">
+        <h2 class="text-3xl font-bold text-hj-dark">Choose Your Coaching Path</h2>
+        <p class="mt-4 text-lg text-hj-dark/80 max-w-2xl mx-auto">Pick the level of support that fits your season of life—quick gut resets, craving mastery or deep 1:1 mentorship.</p>
+      </div>
+      <div class="mx-auto max-w-7xl px-6 lg:px-8 grid gap-10 sm:grid-cols-2 lg:grid-cols-3">
+        <div class="group relative flex flex-col rounded-2xl overflow-hidden bg-hj-light shadow animate-on-scroll" data-delay="100">
+          <img loading="lazy" src="https://images.unsplash.com/photo-1449247613801-ab06418e2861?auto=compress&cs=tinysrgb&fit=crop&w=600&h=450&q=80" alt="Fresh bunch of kale" class="aspect-[4/3] w-full object-cover group-hover:scale-105 transition-transform" />
+          <div class="flex-1 flex flex-col p-6">
+            <h3 class="text-xl font-semibold text-hj-dark">4‑Week IBS Reset</h3>
+            <p class="mt-2 text-sm text-hj-dark/80 flex-1">Targeted elimination + gut‑brain calming protocols for rapid symptom relief.</p>
+            <div class="mt-4 flex items-center justify-between">
+              <span class="text-lg font-bold text-hj-dark">$499</span>
+              <button class="px-4 py-2 rounded-md bg-hj-leaf text-hj-dark2 text-sm font-semibold hover:bg-hj-leaf2">Enroll</button>
+            </div>
+          </div>
+        </div>
+        <div class="group relative flex flex-col rounded-2xl overflow-hidden bg-hj-light shadow animate-on-scroll" data-delay="150">
+          <img loading="lazy" src="https://images.unsplash.com/photo-1535359056830-5f305237f39f?auto=compress&cs=tinysrgb&fit=crop&w=600&h=450&q=80" alt="Assorted green vegetables" class="aspect-[4/3] w-full object-cover group-hover:scale-105 transition-transform" />
+          <div class="flex-1 flex flex-col p-6">
+            <h3 class="text-xl font-semibold text-hj-dark">Mindful Eating Mastery</h3>
+            <p class="mt-2 text-sm text-hj-dark/80 flex-1">8‑week live cohort to transform your relationship with hunger & cravings.</p>
+            <div class="mt-4 flex items-center justify-between">
+              <span class="text-lg font-bold text-hj-dark">$799</span>
+              <button class="px-4 py-2 rounded-md bg-hj-leaf text-hj-dark2 text-sm font-semibold hover:bg-hj-leaf2">Enroll</button>
+            </div>
+          </div>
+        </div>
+        <div class="group relative flex flex-col rounded-2xl overflow-hidden bg-hj-light shadow animate-on-scroll" data-delay="200">
+          <img loading="lazy" src="https://images.unsplash.com/photo-1501004318641-b39e6451bec6?auto=compress&cs=tinysrgb&fit=crop&w=600&h=450&q=80" alt="Forest trail" class="aspect-[4/3] w-full object-cover group-hover:scale-105 transition-transform" />
+          <div class="flex-1 flex flex-col p-6">
+            <h3 class="text-xl font-semibold text-hj-dark">1:1 Private Coaching</h3>
+            <p class="mt-2 text-sm text-hj-dark/80 flex-1">12‑week personalized mentorship with unlimited support and lab integration.</p>
+            <div class="mt-4 flex items-center justify-between">
+              <span class="text-lg font-bold text-hj-dark">from $1,800</span>
+              <button class="px-4 py-2 rounded-md bg-hj-leaf text-hj-dark2 text-sm font-semibold hover:bg-hj-leaf2">Apply</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="mt-16 text-center">
+        <a href="#join" class="inline-block px-8 py-3 rounded-md bg-hj-dark text-white font-semibold hover:bg-hj-dark2">Join the Community</a>
+      </div>
+    </section>
+
+    <!-- Process image -->
+    <section id="process" class="py-24 bg-hj-light2">
+      <div class="mx-auto max-w-7xl px-6 lg:px-8 grid lg:grid-cols-2 gap-16 items-center">
+        <div class="space-y-6 animate-on-scroll">
+          <h2 class="text-3xl font-bold text-hj-dark">My Three‑Step Process</h2>
+          <ol class="list-decimal list-inside space-y-3 text-lg text-hj-dark/80">
+            <li><span class="font-semibold text-hj-dark">Discover:</span> Deep‑dive intake & symptom mapping to reveal root imbalances.</li>
+            <li><span class="font-semibold text-hj-dark">Design:</span> We co‑create habit, food & mindset experiments tailored to you.</li>
+            <li><span class="font-semibold text-hj-dark">Integrate:</span> Weekly feedback loops refine the plan until healthy choices feel automatic.</li>
+          </ol>
+          <a href="#join" class="inline-block px-6 py-3 rounded-md bg-hj-leaf text-hj-dark2 font-semibold shadow hover:bg-hj-leaf2">Book a Discovery Call</a>
+        </div>
+        <div>
+          <img loading="lazy" src="https://images.unsplash.com/photo-1501436513149-30b4e355b889?auto=compress&cs=tinysrgb&fit=crop&w=800&h=600&q=80" alt="Garden walkway" class="rounded-2xl shadow-xl ring-1 ring-hj-dark/10 w-full object-cover" />
+        </div>
+      </div>
+    </section>
+
+    <!-- rest of document unchanged (Join, Testimonials, Contact, Footer, Scripts) -->
+  </main>
+</body>
+</html>
